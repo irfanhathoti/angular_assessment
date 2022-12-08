@@ -1,0 +1,35 @@
+<form class="container" [formGroup]="userDetail" (ngSubmit)="handleSubmit()">
+    <div class="form-floating w-50 mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="name"
+            formControlName="name">
+        <label for="floatingInput"> Name </label>
+    </div>
+    <div class="form-floating w-50">
+        <input type="email" class="form-control" id="floatingPassword" placeholder="Email" name="email"
+            formControlName="email">
+        <label for="floatingPassword">Email</label>
+    </div>
+    <div class="form-floating mt-3 w-50">
+        <input type="text" class="form-control" id="floatingPassword" placeholder="Phone Number" name="phoneNo"
+            formControlName="phoneNo">
+        <label for="floatingPassword">Phone Number</label>
+    </div>
+    <h5>Resume</h5>
+    <div>
+        <input type="file" class="custom-file-input" name="file" formControlName="file" id="">
+    </div>
+    <div>
+        <div>To apply with your indeed Resume <b style="color: blue;">sign in</b> -No Reasume ? <b
+                style="color: blue;">Create One Now</b> </div>
+    </div>
+    <h5>Message</h5>
+    <textarea name="" id="" cols="73" rows="10" name="message" formControlName="message"></textarea>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+            Notify me when similar jobs are available
+        </label>
+    </div>
+    <button class=" btn btn-primary" type="submit"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Submit</button>
+</form>

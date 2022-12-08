@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title" *ngIf="jobDeatilData"> Job Role: <small> {{jobDeatilData.title}}</small> </h5>
+        <div *ngIf="jobDeatilData"> <b>JobId</b> : {{jobDeatilData.jobId}} </div>
+        <div class="card-subtitle mb-2 text-muted" *ngIf="jobDeatilData"> <b>Location</b> :{{jobDeatilData.location}}
+        </div>
+        <p *ngIf="jobDeatilData" class="card-text"> Skills : {{jobDeatilData.skill}} </p>
+        <a class="btn btn-primary" routerLink="applyJob">Apply Now</a>
+    </div>
+</div>
+<router-outlet></router-outlet>

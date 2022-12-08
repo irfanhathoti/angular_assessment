@@ -1,0 +1,23 @@
+<span class="p-input-icon-left">
+    <i class="pi pi-search"></i>
+    <input type="text" pInputText class="p-inputtext-sm" placeholder="Search Job" [(ngModel)] = "title">         
+</span>
+<input type="text" pInputText class="p-inputtext-sm" placeholder="Search location" >  
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">JobId</th>
+            <th scope="col">Title</th>
+            <th scope="col">Location</th>
+            <th scope="col"> Job Link </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let job of jobDetails | searchJob:title">
+            <th scope="row"> {{job.jobId}} </th>
+            <td>  {{job.title}} </td>
+            <td> {{job.location}} </td>
+            <td> <a class="btn btn-primary"[routerLink]=" ['/jobDetail',job.id]" > job Detail </a> </td>
+        </tr>
+    </tbody>
+</table>

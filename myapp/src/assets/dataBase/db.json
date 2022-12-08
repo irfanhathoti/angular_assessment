@@ -1,0 +1,68 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Java FullStack Developer",
+      "location": "Chennai",
+      "skill":"Java",
+      "jobId":"34566"
+
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Developer",
+      "location": "Chennai",
+      "skill":"ReactJs,Angular",
+      "jobId":"34565"
+
+    },
+    {
+      "id": 3,
+      "title": "Software Devaloper",
+      "location": "Bangaluru",
+      "skill":".Net Python",
+      "jobId":"34564"
+    },
+    {
+      "id": 4,
+      "title": "Web Developer",
+      "location": "Bangaluru",
+      "skill":"MERN , MEAN , PEAN , PERN",
+      "jobId":"34563"
+
+    },
+    {
+      "id": 5,
+      "title": "IT Support",
+      "location": "Bangaluru",
+      "skill":"Basic Technical Skills,Systems and networks ",
+      "jobId":"34562"
+    },
+    {
+      "id": 6,
+      "title": "Web Developer",
+      "location": "Chennai",
+      "skill":"MERN , MEAN , PEAN , PERN",
+      "jobId":"34568"
+
+    },
+    {
+      "id": 7,
+      "title": ".Net Developer",
+      "location": "Channai",
+      "skill":"Pyton C#,",
+      "jobId":"34561"
+    }
+
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
